@@ -40,6 +40,7 @@ We propose **SSNet** (Spectrum Sensing Network), a semantic segmentation model t
   <img src="https://github.com/user-attachments/assets/86328592-6a94-4325-bbea-abbab0a45ca4" alt="SSNet Spectrogram Segmentation 1" width="500"/>
   <p><i>SSNet Segmentation Architechture</i></p>
   <br/>
+</div>
 
 ## Supported Signal Types
 
@@ -84,16 +85,6 @@ git clone https://github.com/VyDat-1702/Spectrogram_Signal-Senmatic_Segmentation
 - **Interference Management**: Multi-signal detection and classification
 - **Spectrum Monitoring**: Real-time occupancy analysis
 - **Coexistence Studies**: Analyzing spectrum sharing scenarios
-
-## Advantages over Traditional Methods
-
-| Feature | Traditional Methods | SSNet |
-|---------|-------------------|-------|
-| Multi-signal Detection | Limited | Excellent |
-| Overlapping Signals | Poor | Robust |
-| Time-Frequency Resolution | Fixed | Adaptive |
-| Real-time Processing | Challenging | Capable |
-| Complex Scenarios | Struggles | Effective |
 
 ## Future Work
 
