@@ -36,19 +36,10 @@ We propose **SSNet** (Spectrum Sensing Network), a semantic segmentation model t
 
 ## Model Architecture
 
-```
-Input: STFT Spectrogram (Time-Frequency Image)
-    ↓
-Encoder (Feature Extraction)
-    ├── Multi-scale Convolutional Layers
-    └── Attention Modules
-    ↓
-Decoder (Upsampling & Segmentation)
-    ├── Skip Connections
-    └── Pixel-wise Classification
-    ↓
-Output: Segmented Spectrum Map
-```
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/86328592-6a94-4325-bbea-abbab0a45ca4" alt="SSNet Spectrogram Segmentation 1" width="500"/>
+  <p><i>SSNet Segmentation Architechture</i></p>
+  <br/>
 
 ## Supported Signal Types
 
@@ -63,55 +54,12 @@ Output: Segmented Spectrum Map
 - RF impairments (frequency offset, phase noise)
 - Spectrally congested scenarios
 
-## Requirements
-
-```
-python >= 3.8
-tensorflow >= 2.8
-numpy
-matplotlib
-scipy
-scikit-learn
-```
-
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ssnet-spectrum-sensing.git
-cd ssnet-spectrum-sensing
-
-# Install dependencies
-pip install -r requirements.txt
+git clone https://github.com/VyDat-1702/Spectrogram_Signal-Senmatic_Segmentation.git
 ```
-
-## Usage
-
-```python
-# Train SSNet
-python train.py --data_path ./spectrograms --epochs 100
-
-# Evaluate model performance
-python evaluate.py --model_path ./models/ssnet_best.h5
-
-# Run inference on new signals
-python infer.py --input ./test_signal.npy
-```
-
-## Results
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/86328592-6a94-4325-bbea-abbab0a45ca4" alt="SSNet Spectrogram Segmentation 1" width="500"/>
-  <p><i>SSNet Segmentation Example: Multiple Signal Detection</i></p>
-  <br/>
-  
-  <img src="https://github.com/user-attachments/assets/e5a1f412-359c-4474-8bd2-7c061ed2a80d" alt="SSNet Spectrogram Segmentation 2" width="500"/>
-  <p><i>Spectral Segmentation in Congested Environment</i></p>
-  <br/>
-  
-  <img src="https://github.com/user-attachments/assets/f8cac0b7-4efb-4c95-a575-94d382280635" alt="SSNet Architecture and Results" width="500"/>
-  <p><i>Model Architecture and Performance Metrics</i></p>
-</div>
 
 ## Performance Highlights
 
@@ -159,10 +107,5 @@ python infer.py --input ./test_signal.npy
 
 This research contributes to advancing spectrum sensing technologies for next-generation wireless networks, enabling more efficient spectrum utilization and dynamic spectrum sharing.
 
-## Contact
-
-For questions or collaboration opportunities, please open an issue in this repository.
-
----
 
 **Note**: This is a research project focused on advanced spectrum sensing for 5G and beyond wireless systems.
